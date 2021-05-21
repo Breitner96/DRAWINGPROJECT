@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando teclado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="dibujando">
+
+        <h1>Este es un dibujo a mano alzada o por teclado segun desee</h1>
+
+        <div class=form>
+
+            <div>
+            <label><h2>Elige si mano alzada o teclado</h2></label>
+            <input list="teclas" name="tecla">
+            <datalist id="teclas">
+                <option id="Teclado" value="Teclado">
+                <option id="Alzada" value="Alzada">
+            </datalist>
+
+            <input type="submit" id="enviar" value="Nuevo evento">
+
+            </div>
+            
+
+            <form action="#">
+
+                <p>
+              
+                  <h2>Elija el color con el que desea pintar: </h2><input type="color" name="colorsecundario" list="listacoloresperfil">
+              
+                </p>
+              
+              </form>
+              
+              <datalist id="listacoloresperfil">
+              
+                <option value="#00ffff">
+              
+                <option value="#ff00ff">
+              
+                <option value="#ffff00">
+              
+                <option value="#ffaa00">
+              
+              </datalist>
+
+
+        </div>
+
+        <div class="Borrar">
+
+          <!-- <button></button> -->
+          <input type="submit" id="borrar" value="Borrador">
+
+        </div>
+        
+
+        <canvas id="canvas" width="1000" height="700"></canvas>
+
+
+    </section>
+
+
+    <script src="./jquery-3.6.0.js"></script>
+   <script src="./app.js"></script> 
+</body>
+</html>
